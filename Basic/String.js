@@ -1,4 +1,4 @@
-var test_str = "I am a test Str!!!";
+var test_str = "I am a Test Str!!!";
 
 //Segment of task
 console.log(test_str.substr(6,9) )
