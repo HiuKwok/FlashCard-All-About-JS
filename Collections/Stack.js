@@ -29,4 +29,30 @@ arr.shift();
 console.log(arr.join(",") );
 
 
+//Filter
+let apple = ['Iphone', 'Ipad', 'Iwatch', 'Mac'];
+//Result a collection which match statement on filter clause.
+const result = apple.filter( v => v.startsWith('I'));
+console.log(result);
+
+
+//Find is similar to filter but only result the first item which match the statment.
+const rFind = apple.filter( v=>  v.startsWith('M'));
+console.log("Find: " + rFind);
+
+//Have option to return index instead.
+const rIndex = apple.findIndex( e => e === 'Mac');
+//0 base.
+console.log("Nac is on:" + rIndex);
+
+const rFindNotExist = apple.filter( v=>  v.startsWith('X'));
+console.log("Find not exist", rFindNotExist);
+
+//Join above
+console.log("Join: " + rFind.concat(rFindNotExist));
+
+const rWithLogo = apple.map(v => v.concat("@Apple"));
+console.log(rWithLogo);
+
+
 
